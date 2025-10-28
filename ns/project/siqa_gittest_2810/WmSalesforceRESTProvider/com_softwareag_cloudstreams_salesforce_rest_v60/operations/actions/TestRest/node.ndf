@@ -627,7 +627,7 @@
     <value name="serviceName">SalesforceRestService</value>
     <value name="throwExceptionOnError">true</value>
     <value name="virtualServiceName">WmCloudStreams.RestVS</value>
-    <value name="connectionName">project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConnAlias</value>
+    <value name="connectionName">project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:TestConnAlias</value>
     <value name="connectionType">sagcloud</value>
     <value name="connectorID">com.softwareag.cloudstreams.salesforce.rest_v60</value>
     <record name="customData" javaclass="com.wm.util.Values">
