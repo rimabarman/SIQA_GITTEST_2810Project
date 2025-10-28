@@ -30,6 +30,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 10.7.0.0.196
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:
@@ -163,7 +164,7 @@ services:
     version: "1.0"
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.196
-- serviceName: project.siqa_gittest_2810.integrations:Test_RestConnector
+- serviceName: project.siqa_gittest_2810.integrations:Test_RestConn_New
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
@@ -182,6 +183,24 @@ services:
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.196
 - serviceName: project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:TestRest
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: project.siqa_gittest_2810.integrations:Test_RestConnector
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
@@ -229,9 +248,47 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2097
+- serviceName: project.siqa_gittest_2810.integrations:testjms
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: publisher:publisher
+  packages:
+  - name: JMSTest
+    version: "1.0"
+- serviceName: pub.jms:send
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2097
+- serviceName: jms2wayssl_publisher:jms2wayssl_publisher
+  packages:
+  - name: JMS2waySSL
+    version: "1.0"
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   ? iscloudstreamsconnectorservice.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest.connectionAlias
-  : project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConnAlias
+  : project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:TestConnAlias
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.tcpNoDelay
   : "false"
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth.consumerId
@@ -265,7 +322,7 @@ configurationVariables:
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.blockTimeout
   : "1000"
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth.accessToken
-  : "{AES}h1r1CmTvU65r25EqPgWKVdizBZ1CQSjcnxIwmduOKo84luvevzuTQFaXif2zcqBmfIr4g5Yh4LPBWI+k0UTTxNVGuBdE2HBvfKd5xVcNypLO0lcQZbC6G8Ndg3HfbLrNPdw1mGt+t2tyCT3WsO7fD2mK1wuN3U1rA1B0VhuZoUw="
+  : "{AES}h1r1CmTvU65r25EqPgWKVR4m2hd/UFryS/JiCqqjFtWDaKwGSxWSQsolPTOLxo2XoNndeoDuk1uo795HoPXqIvqTsKOpfTphmt1w07MZaoRjZTYNuJ0fYyuUFaH0NcgcxiilIgFvQ7wjgiQAkAPkdGmK1wuN3U1rA1B0VhuZoUw="
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.accessTokenRefreshURL
   : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.socketLinger
