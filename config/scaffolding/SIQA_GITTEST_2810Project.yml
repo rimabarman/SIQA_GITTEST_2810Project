@@ -24,10 +24,14 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: WmSalesforceRESTProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 services:
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -45,6 +49,8 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -61,6 +67,8 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -77,6 +85,44 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConnAlias
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:TestConnAlias
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: project.siqa_gittest_2810.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -93,6 +139,8 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -113,6 +161,44 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: project.siqa_gittest_2810.integrations:Test_RestConnector
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:TestRest
+  packages:
+  - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: project.siqa_gittest_2810.integrations:deepclonetest
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -129,6 +215,8 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -142,49 +230,209 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2097
 configurationVariables:
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
+  ? iscloudstreamsconnectorservice.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest.connectionAlias
+  : project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConnAlias
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth.consumerId
+  : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
-  : siqatest
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.poolable
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.enableSNI
+  : "true"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : 9.46.196.248
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
-  : ""
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.tcpNoDelay
+  : "false"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MySQL
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.providerUrl
+  : https://sag53-dev-ed.develop.my.salesforce.com
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth.accessToken
+  : "{AES}h1r1CmTvU65r25EqPgWKVdizBZ1CQSjcnxIwmduOKo84luvevzuTQFaXif2zcqBmfIr4g5Yh4LPBWI+k0UTTxNVGuBdE2HBvfKd5xVcNypLO0lcQZbC6G8Ndg3HfbLrNPdw1mGt+t2tyCT3WsO7fD2mK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.expireTimeout
+  : "1000"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth.consumerSecret
+  : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.refreshToken
+  : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QruD7dprkqIUz2A2UuAroPCo9lkD9cn9+IyICeILx3/1l3xiIkjokSOR4joVg6CJF"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth.consumerId
+  : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.refreshToken
+  : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QruD7dprkqIUz2A2UuAroPCo9lkD9cn9+IyICeILx3/1l3xiIkjokSOR4joVg6CJF"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.sockBuffSize
+  : "8192"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.enableCompression
+  : "false"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.retryIfRequestSentOk
+  : "true"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : TstsDriver
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.reuseAddr
+  : "false"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.refreshAccessToken
+  : "true"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? iscloudstreamsconnectorservice.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestRest.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.idleTimeout
+  : "-1"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.validateAfterInactivity
+  : "1000"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.sockBuffSize
+  : "8192"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.providerUrl
+  : https://sag53-dev-ed.develop.my.salesforce.com
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth.accessToken
+  : "{AES}h1r1CmTvU65r25EqPgWKVR4m2hd/UFryS/JiCqqjFtWDaKwGSxWSQsolPTOLxo2XoNndeoDuk1uo795HoPXqIvqTsKOpfTphmt1w07MZaoRjZTYNuJ0fYyuUFaH0NcgcxiilIgFvQ7wjgiQAkAPkdGmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.blockTimeout
+  : "1000"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.poolable
+  : "true"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.scope
+  : offline_access api refresh_token
+  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.connectTimeout
+  : "30000"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : MYSQL_DATABASE
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
-  : TstsDriver
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth.consumerSecret
+  : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.authorizationHeaderInTokenRefresh
   : "false"
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.oauth_v20.authorizationHeaderPrefix
+  : Bearer
   ? artConnection.SIQA_GITTEST_2810Project.project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:TestConnAlias.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..siqa_gittest_2810..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.retryCount
+  : "4"
