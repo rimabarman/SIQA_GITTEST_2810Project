@@ -18,6 +18,12 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: SIQACloudStreamsTests
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -35,6 +41,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -47,6 +57,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -59,6 +73,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_2810.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -71,6 +89,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -87,6 +109,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_2810.integrations:deepclonetest
   packages:
   - name: SIQA_GITTEST_2810Project
@@ -99,6 +125,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
