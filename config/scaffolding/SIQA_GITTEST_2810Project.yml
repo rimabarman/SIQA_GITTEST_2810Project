@@ -33,10 +33,17 @@ packages:
   version: 10.7.0.0.196
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: JMS2waySSL
+  gitServerName: rimaSCSiqa
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -56,6 +63,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -73,6 +82,8 @@ services:
 - serviceName: project.siqa_gittest_2810.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -92,6 +103,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -110,6 +123,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -127,6 +142,8 @@ services:
 - serviceName: project.siqa_gittest_2810.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -150,6 +167,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -167,6 +186,8 @@ services:
 - serviceName: project.siqa_gittest_2810.integrations:Sum
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -194,6 +215,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -211,6 +234,8 @@ services:
 - serviceName: project.siqa_gittest_2810.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:TestRest
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -230,6 +255,8 @@ services:
   packages:
   - name: SIQA_GITTEST_2810Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -247,6 +274,8 @@ services:
 - serviceName: project.siqa_gittest_2810.integrations:deepclonetest
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -277,6 +306,8 @@ services:
 - serviceName: project.siqa_gittest_2810.integrations:testjms
   packages:
   - name: SIQA_GITTEST_2810Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
