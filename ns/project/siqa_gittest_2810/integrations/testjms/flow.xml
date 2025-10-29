@@ -5,11 +5,11 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="JMSTest" SERVICE="publisher:publisher">
+<INVOKE NAME="JMSTest" SERVICE="publisher:publisher" DISABLED="true">
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE NAME="JMS2waySSL" SERVICE="jms2wayssl_publisher:jms2wayssl_publisher" DISABLED="true">
+<INVOKE NAME="JMS2waySSL" SERVICE="jms2wayssl_publisher:jms2wayssl_publisher">
   <COMMENT></COMMENT>
 </INVOKE>
 
